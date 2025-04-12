@@ -21,9 +21,10 @@ int main()
 		float data;//????float???
 		while(1)
 		{
-			data=arm_sin_f32(3.1415926/6);//sin(30°),????0.5
+			data=arm_sin_f32(3.1415926/6);//sin(30ï¿½),????0.5
 			Serial_Printf("%f",data);
 			Delay_ms(1000);
+			Serial_Printf("hh\r\n");
 		}
 
 	
