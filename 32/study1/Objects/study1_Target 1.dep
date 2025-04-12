@@ -1,0 +1,15 @@
+Dependencies for Project 'study1', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 6220000::V6.22::ARMCLANG
+F (.\Starts\startup_stm32f10x_md.s)(0x4D783CD2)(--target=arm-arm-none-eabi -mcpu=cortex-m3 -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4-I"C:/Users/Hank Feng/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include"-Wa,armasm,--pd,"__UVISION_VERSION SETA 540" -Wa,armasm,--pd,"STM32F10X_HD SETA 1"-o ./objects/startup_stm32f10x_md.o)
+F (.\Starts\core_cm3.c)(0x4C0C587E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./Starts-I"C:/Users/Hank Feng/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include"-D__UVISION_VERSION="540" -DSTM32F10X_HD-o ./objects/core_cm3.o -MMD)
+F (.\Starts\system_stm32f10x.c)(0x4D783CB0)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./Starts-I"C:/Users/Hank Feng/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include"-D__UVISION_VERSION="540" -DSTM32F10X_HD-o ./objects/system_stm32f10x.o -MMD)
+I (Starts\stm32f10x.h)(0x4D783CB4)
+I (Starts\core_cm3.h)(0x4D523B58)
+I (Starts\system_stm32f10x.h)(0x4D783CAA)
+F (.\Starts\core_cm3.h)(0x4D523B58)()
+F (.\Starts\stm32f10x.h)(0x4D783CB4)()
+F (.\Starts\system_stm32f10x.h)(0x4D783CAA)()
+F (.\User\main.cpp)(0x6794EEA4)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./Starts-I"C:/Users/Hank Feng/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include"-D__UVISION_VERSION="540" -DSTM32F10X_HD-o ./objects/main.o -MMD)
+I (Starts\stm32f10x.h)(0x4D783CB4)
+I (Starts\core_cm3.h)(0x4D523B58)
+I (Starts\system_stm32f10x.h)(0x4D783CAA)
