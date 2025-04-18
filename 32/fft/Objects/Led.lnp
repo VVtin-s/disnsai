@@ -36,9 +36,12 @@
 ".\objects\startup_stm32f10x_hd.o"
 ".\objects\system_stm32f10x.o"
 ".\objects\delay.o"
+".\objects\fft.o"
+".\objects\cr4_fft_256_stm32.o"
+".\objects\cr4_fft_1024_stm32.o"
 ".\objects\main.o"
 ".\objects\stm32f10x_it.o"
-"E:\Keil-v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Lib\ARM\arm_cortexM3l_math.lib"
+"D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\DSP\Lib\ARM\arm_cortexM3l_math.lib"
 --library_type=microlib --strict --scatter ".\Objects\Led.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

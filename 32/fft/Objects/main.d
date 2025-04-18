@@ -1,7 +1,7 @@
 .\objects\main.o: User\main.c
 .\objects\main.o: .\Start\stm32f10x.h
 .\objects\main.o: .\DSPlib\Include\core_cm3.h
-.\objects\main.o: E:\Keil-v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\main.o: .\DSPlib\Include\cmsis_version.h
 .\objects\main.o: .\DSPlib\Include\cmsis_compiler.h
 .\objects\main.o: .\DSPlib\Include\cmsis_armcc.h
@@ -41,9 +41,9 @@
 .\objects\main.o: .\Hardware\Timer.h
 .\objects\main.o: .\Hardware\PWM.h
 .\objects\main.o: .\Hardware\Serial.h
-.\objects\main.o: E:\Keil-v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\main.o: .\Hardware\SerialPackRT.h
-.\objects\main.o: E:\Keil-v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\main.o: .\DSPlib\Include\arm_math.h
 .\objects\main.o: .\DSPlib\Include\core_cm3.h
-.\objects\main.o: E:\Keil-v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

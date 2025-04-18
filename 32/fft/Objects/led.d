@@ -1,7 +1,7 @@
 .\objects\led.o: Hardware\Led.c
 .\objects\led.o: .\Start\stm32f10x.h
 .\objects\led.o: .\DSPlib\Include\core_cm3.h
-.\objects\led.o: E:\Keil-v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\led.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\led.o: .\DSPlib\Include\cmsis_version.h
 .\objects\led.o: .\DSPlib\Include\cmsis_compiler.h
 .\objects\led.o: .\DSPlib\Include\cmsis_armcc.h

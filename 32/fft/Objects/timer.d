@@ -1,7 +1,7 @@
 .\objects\timer.o: Hardware\Timer.c
 .\objects\timer.o: .\Start\stm32f10x.h
 .\objects\timer.o: .\DSPlib\Include\core_cm3.h
-.\objects\timer.o: E:\Keil-v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\timer.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\timer.o: .\DSPlib\Include\cmsis_version.h
 .\objects\timer.o: .\DSPlib\Include\cmsis_compiler.h
 .\objects\timer.o: .\DSPlib\Include\cmsis_armcc.h

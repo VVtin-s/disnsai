@@ -1,7 +1,7 @@
 #include "stm32f10x.h"                  // Device header
 #include "Timer.h"
 #include "stdio.h"
-volatile uint16_t ADC_Value;
+volatile  uint16_t ADC_Value;
 #define ADC1_DR_Address ((u32)0x4001244C)
 
 void STimer_Init(u16 arr, u16 psc)

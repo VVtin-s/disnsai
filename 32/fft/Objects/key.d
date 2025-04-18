@@ -1,7 +1,7 @@
 .\objects\key.o: Hardware\Key.c
 .\objects\key.o: .\Start\stm32f10x.h
 .\objects\key.o: .\DSPlib\Include\core_cm3.h
-.\objects\key.o: E:\Keil-v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\key.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\key.o: .\DSPlib\Include\cmsis_version.h
 .\objects\key.o: .\DSPlib\Include\cmsis_compiler.h
 .\objects\key.o: .\DSPlib\Include\cmsis_armcc.h
