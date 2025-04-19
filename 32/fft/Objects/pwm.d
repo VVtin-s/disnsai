@@ -1,7 +1,7 @@
 .\objects\pwm.o: Hardware\PWM.c
 .\objects\pwm.o: .\Start\stm32f10x.h
 .\objects\pwm.o: .\DSPlib\Include\core_cm3.h
-.\objects\pwm.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\pwm.o: C:\Users\27486\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\pwm.o: .\DSPlib\Include\cmsis_version.h
 .\objects\pwm.o: .\DSPlib\Include\cmsis_compiler.h
 .\objects\pwm.o: .\DSPlib\Include\cmsis_armcc.h

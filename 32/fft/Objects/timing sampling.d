@@ -1,7 +1,7 @@
 .\objects\timing sampling.o: Hardware\Timing Sampling.c
 .\objects\timing sampling.o: .\Start\stm32f10x.h
 .\objects\timing sampling.o: .\DSPlib\Include\core_cm3.h
-.\objects\timing sampling.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\timing sampling.o: C:\Users\27486\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\timing sampling.o: .\DSPlib\Include\cmsis_version.h
 .\objects\timing sampling.o: .\DSPlib\Include\cmsis_compiler.h
 .\objects\timing sampling.o: .\DSPlib\Include\cmsis_armcc.h
@@ -32,4 +32,4 @@
 .\objects\timing sampling.o: .\Library\stm32f10x_wwdg.h
 .\objects\timing sampling.o: .\Library\misc.h
 .\objects\timing sampling.o: Hardware\Timer.h
-.\objects\timing sampling.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\timing sampling.o: C:\Users\27486\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

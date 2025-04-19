@@ -1,7 +1,7 @@
 .\objects\serialpackrt.o: Hardware\SerialPackRT.c
 .\objects\serialpackrt.o: .\Start\stm32f10x.h
 .\objects\serialpackrt.o: .\DSPlib\Include\core_cm3.h
-.\objects\serialpackrt.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\serialpackrt.o: C:\Users\27486\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\serialpackrt.o: .\DSPlib\Include\cmsis_version.h
 .\objects\serialpackrt.o: .\DSPlib\Include\cmsis_compiler.h
 .\objects\serialpackrt.o: .\DSPlib\Include\cmsis_armcc.h
@@ -31,6 +31,6 @@
 .\objects\serialpackrt.o: .\Library\stm32f10x_usart.h
 .\objects\serialpackrt.o: .\Library\stm32f10x_wwdg.h
 .\objects\serialpackrt.o: .\Library\misc.h
-.\objects\serialpackrt.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\serialpackrt.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\serialpackrt.o: C:\Users\27486\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\serialpackrt.o: C:\Users\27486\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\serialpackrt.o: Hardware\Serial.h

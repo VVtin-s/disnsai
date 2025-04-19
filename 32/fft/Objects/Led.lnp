@@ -9,6 +9,8 @@
 ".\objects\serial.o"
 ".\objects\serialpackrt.o"
 ".\objects\timing sampling.o"
+".\objects\ad9959.o"
+".\objects\ad9959_outset.o"
 ".\objects\misc.o"
 ".\objects\stm32f10x_adc.o"
 ".\objects\stm32f10x_bkp.o"
@@ -41,7 +43,7 @@
 ".\objects\cr4_fft_1024_stm32.o"
 ".\objects\main.o"
 ".\objects\stm32f10x_it.o"
-"D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\DSP\Lib\ARM\arm_cortexM3l_math.lib"
+"..\..\..\..\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Lib\ARM\arm_cortexM3l_math.lib"
 --library_type=microlib --strict --scatter ".\Objects\Led.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

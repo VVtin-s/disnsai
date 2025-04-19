@@ -1,7 +1,7 @@
 .\objects\oled.o: Hardware\OLED.c
 .\objects\oled.o: .\Start\stm32f10x.h
 .\objects\oled.o: .\DSPlib\Include\core_cm3.h
-.\objects\oled.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\oled.o: C:\Users\27486\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\oled.o: .\DSPlib\Include\cmsis_version.h
 .\objects\oled.o: .\DSPlib\Include\cmsis_compiler.h
 .\objects\oled.o: .\DSPlib\Include\cmsis_armcc.h
