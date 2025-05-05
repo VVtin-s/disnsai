@@ -5,46 +5,48 @@
 uint16_t Serial_RxData;
 uint16_t Serial_RxFlag;
 
+uint16_t Serial_TxPacket[4];
+uint16_t Serial_RxPacket[4];
 
 
-void Serial_Init(void)
-{
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1 , ENABLE);
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA , ENABLE);
-	
-	GPIO_InitTypeDef GPIO_InitStucture;
-	GPIO_InitStucture.GPIO_Mode = GPIO_Mode_AF_PP;    //TX_GPIO
-	GPIO_InitStucture.GPIO_Pin = GPIO_Pin_9;
-	GPIO_InitStucture.GPIO_Speed  = GPIO_Speed_50MHz;
-	GPIO_Init( GPIOA, &GPIO_InitStucture );
-	
-	GPIO_InitStucture.GPIO_Mode = GPIO_Mode_IPU;			//RX_GPIO
-	GPIO_InitStucture.GPIO_Pin = GPIO_Pin_10;
-	GPIO_InitStucture.GPIO_Speed  = GPIO_Speed_50MHz;
-	GPIO_Init( GPIOA, &GPIO_InitStucture );
-	
-	USART_InitTypeDef USART_InitStructure;
-	USART_InitStructure.USART_BaudRate = 9600;
-	USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
-	USART_InitStructure.USART_Mode = USART_Mode_Tx | USART_Mode_Rx;					//USART Init
-	USART_InitStructure.USART_Parity = USART_Parity_No;
-	USART_InitStructure.USART_StopBits = USART_StopBits_1;
-	USART_InitStructure.USART_WordLength = USART_WordLength_8b;
-	USART_Init(USART1 , &USART_InitStructure);
-	
-	USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);									//NVIC IT Init
-	
-	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
-	
-	NVIC_InitTypeDef NVIC_InitStructure;
-	NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQn;
-	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
-	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;
-	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;
-	NVIC_Init(&NVIC_InitStructure);
-	
-	USART_Cmd(USART1 , ENABLE);
-}
+//void Serial_Init(void)
+//{
+//	RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1 , ENABLE);
+//	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA , ENABLE);
+//	
+//	GPIO_InitTypeDef GPIO_InitStucture;
+//	GPIO_InitStucture.GPIO_Mode = GPIO_Mode_AF_PP;    //TX_GPIO
+//	GPIO_InitStucture.GPIO_Pin = GPIO_Pin_9;
+//	GPIO_InitStucture.GPIO_Speed  = GPIO_Speed_50MHz;
+//	GPIO_Init( GPIOA, &GPIO_InitStucture );
+//	
+//	GPIO_InitStucture.GPIO_Mode = GPIO_Mode_IPU;			//RX_GPIO
+//	GPIO_InitStucture.GPIO_Pin = GPIO_Pin_10;
+//	GPIO_InitStucture.GPIO_Speed  = GPIO_Speed_50MHz;
+//	GPIO_Init( GPIOA, &GPIO_InitStucture );
+//	
+//	USART_InitTypeDef USART_InitStructure;
+//	USART_InitStructure.USART_BaudRate = 115200;
+//	USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
+//	USART_InitStructure.USART_Mode = USART_Mode_Tx | USART_Mode_Rx;					//USART Init
+//	USART_InitStructure.USART_Parity = USART_Parity_No;
+//	USART_InitStructure.USART_StopBits = USART_StopBits_1;
+//	USART_InitStructure.USART_WordLength = USART_WordLength_8b;
+//	USART_Init(USART1 , &USART_InitStructure);
+//	
+//	USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);									//NVIC IT Init
+//	
+//	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+//	
+//	NVIC_InitTypeDef NVIC_InitStructure;
+//	NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQn;
+//	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+//	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;
+//	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;
+//	NVIC_Init(&NVIC_InitStructure);
+//	
+//	USART_Cmd(USART1 , ENABLE);
+//}
 
 //发送字节
 void Serial_SendByte(uint16_t Byte)
@@ -96,11 +98,11 @@ void Serial_SendNumber(uint32_t Number , uint16_t Length)
 }
 
 //重定义fputc
-int fputc(int ch, FILE *f)
-{
-	Serial_SendByte(ch);
-	return ch;
-}
+//int fputc(int ch, FILE *f)
+//{
+//	Serial_SendByte(ch);
+//	return ch;
+//}
 //重写prinrf
 void Serial_Printf(char *format , ...)
 {
@@ -113,15 +115,15 @@ void Serial_Printf(char *format , ...)
 }
 
 //中断函数
-//void USART1_IRQHandler(void)
-//{
-//	if (USART_GetITStatus(USART1, USART_IT_RXNE) == SET)
-//	{
-//		Serial_RxData = USART_ReceiveData(USART1);
-//		Serial_RxFlag = 1;
-//		USART_ClearITPendingBit(USART1, USART_IT_RXNE);
-//	}
-//}
+void USART1_IRQHandler(void)
+{
+	if (USART_GetITStatus(USART1, USART_IT_RXNE) == SET)
+	{
+		Serial_RxData = USART_ReceiveData(USART1);
+		Serial_RxFlag = 1;
+		USART_ClearITPendingBit(USART1, USART_IT_RXNE);
+	}
+}
 
 //获取接受标志
 uint16_t Serial_GetRxFlag(void)
@@ -139,3 +141,12 @@ uint16_t Serial_GetRxData(void)
 {
 	return Serial_RxData;
 }
+
+
+void Serial_SendPacket(void)
+{
+	Serial_SendByte(0xFF);
+	Serial_SendArray(Serial_TxPacket, 4);
+	Serial_SendByte(0xFE);
+}
+

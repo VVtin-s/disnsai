@@ -2,7 +2,7 @@
 .\objects\stm32f10x_tim.o: Library\stm32f10x_tim.h
 .\objects\stm32f10x_tim.o: .\Start\stm32f10x.h
 .\objects\stm32f10x_tim.o: .\DSPlib\Include\core_cm3.h
-.\objects\stm32f10x_tim.o: C:\Users\27486\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\stm32f10x_tim.o: E:\Keil-v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\stm32f10x_tim.o: .\DSPlib\Include\cmsis_version.h
 .\objects\stm32f10x_tim.o: .\DSPlib\Include\cmsis_compiler.h
 .\objects\stm32f10x_tim.o: .\DSPlib\Include\cmsis_armcc.h

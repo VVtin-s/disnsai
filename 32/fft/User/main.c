@@ -1,31 +1,60 @@
-#include "stm32f10x.h"                  // Device header
-#include "main.h"
-#include "delay.h"
-#include "Led.h"
-#include "Key.h"
-#include "oled.h"
-#include "Key_EXTI.h"
-#include "Beep.h"
-#include "Timer.h"
-#include "PWM.h"
-#include "Serial.h"
-#include "SerialPackRT.h"
-#include "math.h"
-#include "arm_math.h"
+#include "main.h"                  // Device header
 
-uint16_t Rx_Data;
-
-int main()
+int main(void)
 {
-		Serial_Init();
-		float data;//????float???
-		while(1)
-		{
-			data=arm_sin_f32(3.1415926/6);//sin(30)æ˜¯0.5åº¦æµ‹è¯•
-			Serial_Printf("%f",data);
-			Delay_ms(1000);
-			Serial_Printf("hh\r\n");
-		}
+	Serial_Init();
+	//lcd_init();
+	Keypad_GPIO_EXTI_Init();
+//	uint16_t i=0;
+	myADC1_Init();
+	//lcd_clear(YELLOW);
+	//lcd_show_string(10, 40, 240, 32, 32, "start", RED);
 
+	//fft test
+	//FFT_test();
+//	for (uint8_t j=0; j<3 ; j++)
+//	{
+//		Serial_Printf("%d\r\n", FFT_Mag[j]);
+//	}
 	
+	//9959 Test
+//	GPIO_AD9959_Configuration();
+//	AD9959_Init();
+//	AD9959_enablechannel0();
+//	AD9959_Setwavefrequency (1000);
+//	//AD9959_Setwavephase(1000, 0);
+//	uint16_t 	a=0;
+//	Serial_SendString("Start");
+
+	//MY_NVIC_PriorityGroup_Config(NVIC_PriorityGroup_2);	//ÉèÖÃÖÐ¶Ï·Ö×é
+	
+	//Delay_ms(500);//ÑÓÊ±Ò»»á¶ù£¬µÈ´ýÉÏµçÎÈ¶¨,È·±£AD9833±È¿ØÖÆ°åÏÈÉÏµç¡£
+	
+	
+	
+	//AD9833_Init(1);//IO¿Ú¼°AD9833¼Ä´æÆ÷³õÊ¼»¯
+	
+	//ÆµÂÊÈë¿Ú²ÎÊýÎªfloat£¬¿ÉÊ¹ÐÅºÅµÄÆµÂÊ¸ü¾«È·
+	//AD9833_SetFrequencyQuick(1000.0,AD9833_OUT_TRIANGLE, 1);//Ð´Êä³öÆµÂÊ1000.0Hz,Êä³öÕýÏÒ²¨
+	
+    while (1)
+    { 
+
+		//ADC Test
+			if (adc_finish_fg == 1)  
+        {
+            adc_finish_fg = 0;
+
+            for (int i = 0; i < sample_num; i++)
+            {
+                Serial_Printf("add 8,0,%d", (Adc_data[i])*195/4095);  
+                
+            } 
+			
+			
+			Delay_ms(1000);
+			//Serial_Printf("One done");
+					}
+
+		}
 }

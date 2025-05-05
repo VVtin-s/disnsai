@@ -1,5 +1,5 @@
 #include "AD9959_Outset.h"
-
+#include "AD9959.h"
 
 //--------通道寄存器地址宏定义---------------//
 #define CSR 0x00               //通道选择寄存器

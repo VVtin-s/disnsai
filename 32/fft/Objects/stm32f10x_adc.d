@@ -2,7 +2,7 @@
 .\objects\stm32f10x_adc.o: Library\stm32f10x_adc.h
 .\objects\stm32f10x_adc.o: .\Start\stm32f10x.h
 .\objects\stm32f10x_adc.o: .\DSPlib\Include\core_cm3.h
-.\objects\stm32f10x_adc.o: C:\Users\27486\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\stm32f10x_adc.o: E:\Keil-v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\stm32f10x_adc.o: .\DSPlib\Include\cmsis_version.h
 .\objects\stm32f10x_adc.o: .\DSPlib\Include\cmsis_compiler.h
 .\objects\stm32f10x_adc.o: .\DSPlib\Include\cmsis_armcc.h

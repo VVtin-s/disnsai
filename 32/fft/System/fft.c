@@ -38,6 +38,7 @@ void adc_sample(void)
 	{
 		//lBufInArray[i] = ADC_Value;
 	}
-	cr4_fft_256_stm32(lBufOutArray,lBufInArray, NPT);
+
+	cr4_fft_1024_stm32(lBufOutArray,lBufInArray, NPT);
 	GetPowerMag();
 }

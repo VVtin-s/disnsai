@@ -2424,12 +2424,12 @@ xbf38,0x00c9
   631 000011E0                 END
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
 ork --depend=.\objects\cr4_fft_1024_stm32.d -o.\objects\cr4_fft_1024_stm32.o -I
-.\RTE\_Target_1 -IC:\Users\27486\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\
-Core\Include -IC:\Users\27486\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP
-\Include -IC:\Users\27486\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Devi
-ce\Include --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 
-540" --predefine="STM32F10X_HD SETA 1" --predefine="_RTE_ SETA 1" --list=.\list
-ings\cr4_fft_1024_stm32.lst System\cr4_fft_1024_stm32.s
+.\RTE\_Target_1 -IE:\Keil-v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include -IE:\
+Keil-v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include -IE:\Keil-v5\Arm\Packs\Keil
+\STM32F1xx_DFP\2.3.0\Device\Include --predefine="__MICROLIB SETA 1" --predefine
+="__UVISION_VERSION SETA 536" --predefine="_RTE_ SETA 1" --predefine="STM32F10X
+_HD SETA 1" --predefine="_RTE_ SETA 1" --list=.\listings\cr4_fft_1024_stm32.lst
+ System\cr4_fft_1024_stm32.s
 
 
 
@@ -2505,13 +2505,13 @@ Symbol: NPT
    Definitions
       At line 46 in file System\cr4_fft_1024_stm32.s
    Uses
-      At line 136 in macro Àk|OPT
+      At line 136 in macro ÈÂŸOPT
       at line 228 in file System\cr4_fft_1024_stm32.s
-      At line 139 in macro Àk|OPT
+      At line 139 in macro ÈÂŸOPT
       at line 228 in file System\cr4_fft_1024_stm32.s
-      At line 142 in macro Àk|OPT
+      At line 142 in macro ÈÂŸOPT
       at line 228 in file System\cr4_fft_1024_stm32.s
-      At line 145 in macro Àk|OPT
+      At line 145 in macro ÈÂŸOPT
       at line 228 in file System\cr4_fft_1024_stm32.s
 
 1 symbol

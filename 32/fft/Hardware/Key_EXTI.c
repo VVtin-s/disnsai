@@ -47,17 +47,17 @@ void Keydelay_ms(uint16_t ms)
 		while(i--);
 	}
 }
-void EXTI4_IRQHandler(void)
-{
-	if(EXTI_GetITStatus(EXTI_Line4) == SET)
-	{
-		Keydelay_ms(30);
-		if(EXTI_GetITStatus(EXTI_Line4) == SET)
-		{
-			EXTI_Count++;
-			Beep_Turn();
-			EXTI_ClearITPendingBit(EXTI_Line4);
-		}
-	}
+//void EXTI4_IRQHandler(void)
+//{
+//	if(EXTI_GetITStatus(EXTI_Line4) == SET)
+//	{
+//		Keydelay_ms(30);
+//		if(EXTI_GetITStatus(EXTI_Line4) == SET)
+//		{
+//			EXTI_Count++;
+//			Beep_Turn();
+//			EXTI_ClearITPendingBit(EXTI_Line4);
+//		}
+//	}
 
-}
+//}

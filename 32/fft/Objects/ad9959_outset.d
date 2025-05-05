@@ -3,7 +3,7 @@
 .\objects\ad9959_outset.o: .\System\sys.h
 .\objects\ad9959_outset.o: .\Start\stm32f10x.h
 .\objects\ad9959_outset.o: .\DSPlib\Include\core_cm3.h
-.\objects\ad9959_outset.o: C:\Users\27486\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\ad9959_outset.o: E:\Keil-v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\ad9959_outset.o: .\DSPlib\Include\cmsis_version.h
 .\objects\ad9959_outset.o: .\DSPlib\Include\cmsis_compiler.h
 .\objects\ad9959_outset.o: .\DSPlib\Include\cmsis_armcc.h
@@ -33,5 +33,6 @@
 .\objects\ad9959_outset.o: .\Library\stm32f10x_usart.h
 .\objects\ad9959_outset.o: .\Library\stm32f10x_wwdg.h
 .\objects\ad9959_outset.o: .\Library\misc.h
-.\objects\ad9959_outset.o: C:\Users\27486\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\ad9959_outset.o: C:\Users\27486\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\ad9959_outset.o: E:\Keil-v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\ad9959_outset.o: E:\Keil-v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\ad9959_outset.o: Hardware\AD9959.h

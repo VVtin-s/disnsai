@@ -7,7 +7,7 @@
 
 extern uint16_t Serial_RxFlag;
 
-void Serial_Init(void);
+//void Serial_Init(void);
 void Serial_SendByte(uint16_t Byte);
 void Serial_SendArray(uint16_t *Array , uint16_t Length);
 void Serial_SendString(char *String);

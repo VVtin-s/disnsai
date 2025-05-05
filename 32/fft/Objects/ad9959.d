@@ -3,7 +3,7 @@
 .\objects\ad9959.o: .\System\sys.h
 .\objects\ad9959.o: .\Start\stm32f10x.h
 .\objects\ad9959.o: .\DSPlib\Include\core_cm3.h
-.\objects\ad9959.o: C:\Users\27486\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\ad9959.o: E:\Keil-v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\ad9959.o: .\DSPlib\Include\cmsis_version.h
 .\objects\ad9959.o: .\DSPlib\Include\cmsis_compiler.h
 .\objects\ad9959.o: .\DSPlib\Include\cmsis_armcc.h
@@ -33,6 +33,6 @@
 .\objects\ad9959.o: .\Library\stm32f10x_usart.h
 .\objects\ad9959.o: .\Library\stm32f10x_wwdg.h
 .\objects\ad9959.o: .\Library\misc.h
-.\objects\ad9959.o: C:\Users\27486\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\ad9959.o: C:\Users\27486\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\ad9959.o: E:\Keil-v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\ad9959.o: E:\Keil-v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\ad9959.o: .\System\delay.h

@@ -1,7 +1,7 @@
 .\objects\fft.o: System\fft.c
 .\objects\fft.o: .\Start\stm32f10x.h
 .\objects\fft.o: .\DSPlib\Include\core_cm3.h
-.\objects\fft.o: C:\Users\27486\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\fft.o: E:\Keil-v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\fft.o: .\DSPlib\Include\cmsis_version.h
 .\objects\fft.o: .\DSPlib\Include\cmsis_compiler.h
 .\objects\fft.o: .\DSPlib\Include\cmsis_armcc.h
@@ -32,8 +32,8 @@
 .\objects\fft.o: .\Library\stm32f10x_wwdg.h
 .\objects\fft.o: .\Library\misc.h
 .\objects\fft.o: .\Hardware\Timing Sampling.h
-.\objects\fft.o: C:\Users\27486\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\fft.o: E:\Keil-v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\fft.o: .\DSPlib\Include\arm_math.h
 .\objects\fft.o: .\DSPlib\Include\core_cm3.h
-.\objects\fft.o: C:\Users\27486\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\fft.o: E:\Keil-v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\fft.o: System\stm32_dsp.h

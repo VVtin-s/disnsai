@@ -2,7 +2,7 @@
 .\objects\misc.o: Library\misc.h
 .\objects\misc.o: .\Start\stm32f10x.h
 .\objects\misc.o: .\DSPlib\Include\core_cm3.h
-.\objects\misc.o: C:\Users\27486\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\misc.o: E:\Keil-v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\misc.o: .\DSPlib\Include\cmsis_version.h
 .\objects\misc.o: .\DSPlib\Include\cmsis_compiler.h
 .\objects\misc.o: .\DSPlib\Include\cmsis_armcc.h

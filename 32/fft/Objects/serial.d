@@ -1,7 +1,7 @@
 .\objects\serial.o: Hardware\Serial.c
 .\objects\serial.o: .\Start\stm32f10x.h
 .\objects\serial.o: .\DSPlib\Include\core_cm3.h
-.\objects\serial.o: C:\Users\27486\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\serial.o: E:\Keil-v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\serial.o: .\DSPlib\Include\cmsis_version.h
 .\objects\serial.o: .\DSPlib\Include\cmsis_compiler.h
 .\objects\serial.o: .\DSPlib\Include\cmsis_armcc.h
@@ -31,5 +31,5 @@
 .\objects\serial.o: .\Library\stm32f10x_usart.h
 .\objects\serial.o: .\Library\stm32f10x_wwdg.h
 .\objects\serial.o: .\Library\misc.h
-.\objects\serial.o: C:\Users\27486\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\serial.o: C:\Users\27486\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\serial.o: E:\Keil-v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\serial.o: E:\Keil-v5\ARM\ARMCC\Bin\..\include\stdarg.h
