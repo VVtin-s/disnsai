@@ -2,7 +2,7 @@
 
 int main(void)
 {
-	Serial_Init();
+	
 	//lcd_init();
 	Keypad_GPIO_EXTI_Init();
 //	uint16_t i=0;

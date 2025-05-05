@@ -19,7 +19,7 @@
 #include <stm32f10x.h>
 #include "Delay.h"
 #include "Timing Sampling.h"
-//#include "lze_lcd.h"
+#include "tjc_usart_hmi.h"
 #include "RLCtest.h"
 #include "check_err.h"
 //#include "gpio.h"
@@ -280,63 +280,63 @@ u8 ERR_r2r3(void)
 // 返回参数: 无
 // 注意事项: 无
 //-----------------------------------------------------------------
-//void display_err_info(u8 err)
-//{
-//LCD_WriteString(50,180,RED, BLACK,(u8 *)"                                    ");
-//	switch (err)
-//	{
-//		case ERR_R1_Short:
-//			LCD_WriteString(50,180,RED, BLACK,(u8 *)"ERR: R1 is short");
-//			break;
-//		case ERR_R2_Short:
-//			LCD_WriteString(50,180,RED, BLACK,(u8 *)"ERR: R2 is short");
-//			break;
-//		case ERR_R1_Open:
-//			LCD_WriteString(50,180,RED, BLACK,(u8 *)"ERR: R1 is open");
-//			Delay_ms(700);			
-//			break;
-//		case ERR_R2_Open:
-//			LCD_WriteString(50,180,RED, BLACK,(u8 *)"ERR: R2 is open");
-//			break;
-//		case ERR_R3_Short:
-//			LCD_WriteString(50,180,RED, BLACK,(u8 *)"ERR: R3 is short");
-//			break;
-//		case ERR_R3_Open:
-//			LCD_WriteString(50,180,RED, BLACK,(u8 *)"ERR: R3 is open");
-//			break;
-//		case ERR_R4_Short:
-//			LCD_WriteString(50,180,RED, BLACK,(u8 *)"ERR: R4 is short");
-//			break;
-//		case ERR_R4_Open:
-//			LCD_WriteString(50,180,RED, BLACK,(u8 *)"ERR: R4 is open");
-//			Delay_ms(700);			
-//			break;
-//		case ERR_C1_Open:
-//			LCD_WriteString(50,180,RED, BLACK,(u8 *)"ERR: C1 is open");
-//			Delay_ms(1000);		
-//			break;
-//		case ERR_C2_Open:
-//			LCD_WriteString(50,180,RED, BLACK,(u8 *)"ERR: C2 is open");
-//			Delay_ms(1000);	
-//			break;
-//		case ERR_C3_Open:
-//			LCD_WriteString(50,180,RED, BLACK,(u8 *)"ERR: C3 is open");
-//			Delay_ms(1000);	
-//			break;
-//		case ERR_C1_Double:
-//			LCD_WriteString(50,180,RED, BLACK,(u8 *)"ERR: C1 is double");
-//			Delay_ms(2000);	
-//			break;
-//		case ERR_C2_Double:
-//			LCD_WriteString(50,180,RED, BLACK,(u8 *)"ERR: C2 is double");
-//			Delay_ms(2000);	
-//			break;
-//		case ERR_C3_Double:
-//			LCD_WriteString(50,180,RED, BLACK,(u8 *)"ERR: C3 is double");
-//			Delay_ms(2000);	
-//			break;
-//		default:
-//			LCD_WriteString(50,180,YELLOW, BLACK,(u8 *)"OK");
-//			break;
-//	}
-//}
+void display_err_info(u8 err)
+{
+	switch (err)
+	{
+		case ERR_R1_Short:
+			TJCPrintf( "t%d.txt=%cERR: R1 is short%c", 3, 34, 34);
+			break;
+		case ERR_R2_Short:
+			TJCPrintf( "t%d.txt=%cERR: R2 is short%c", 3, 34, 34);
+			break;
+		case ERR_R1_Open:
+			TJCPrintf( "t%d.txt=%cERR: R1 is open%c", 3, 34, 34);
+			Delay_ms(700);			
+			break;
+		case ERR_R2_Open:
+			TJCPrintf( "t%d.txt=%cERR: R2 is open%c", 3, 34, 34);
+			break;
+		case ERR_R3_Short:
+			TJCPrintf( "t%d.txt=%cERR: R3 is short%c", 3, 34, 34);
+			break;
+		case ERR_R3_Open:
+			TJCPrintf( "t%d.txt=%cERR: R3 is open%c", 3, 34, 34);
+			break;
+		case ERR_R4_Short:
+			TJCPrintf( "t%d.txt=%cERR: R4 is short%c", 3, 34, 34);
+			break;
+		case ERR_R4_Open:
+			TJCPrintf( "t%d.txt=%cERR: R4 is open%c", 3, 34, 34);
+			Delay_ms(700);			
+			break;
+		case ERR_C1_Open:
+			TJCPrintf( "t%d.txt=%cERR: C1 is open%c", 3, 34, 34);
+			Delay_ms(1000);		
+			break;
+		case ERR_C2_Open:
+			TJCPrintf( "t%d.txt=%cERR: C2 is open%c", 3, 34, 34);
+			Delay_ms(1000);	
+			break;
+		case ERR_C3_Open:
+			TJCPrintf( "t%d.txt=%cERR: C3 is open%c", 3, 34, 34);
+			Delay_ms(1000);	
+			break;
+		case ERR_C1_Double:
+			TJCPrintf( "t%d.txt=%cERR: C1 is double%c", 4, 34, 34);
+			Delay_ms(2000);	
+			break;
+		case ERR_C2_Double:
+			TJCPrintf( "t%d.txt=%cERR: C2 is double%c", 4, 34, 34);
+			Delay_ms(2000);	
+			break;
+		case ERR_C3_Double:
+			TJCPrintf( "t%d.txt=%cERR: C3 is double%c", 4, 34, 34);
+			Delay_ms(2000);	
+			break;
+		default:
+			TJCPrintf( "t%d.txt=%cOK%c", 3, 34, 34);
+			TJCPrintf( "t%d.txt=%cOK%c", 4, 34, 34);
+			break;
+	}
+}

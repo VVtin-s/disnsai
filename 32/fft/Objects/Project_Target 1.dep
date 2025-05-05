@@ -1396,7 +1396,7 @@ I (.\Library\misc.h)(0x4D783BB4)
 I (E:\Keil-v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (E:\Keil-v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 F (.\System\sys.h)(0x6814B39F)()
-F (.\User\main.c)(0x68175FB1)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Hardware -I .\Library -I .\Start -I .\System -I .\User -I .\DSPlib\Include -I .\Hardware -I .\LCD -I .\HMI-I.\RTE\_Target_1-IE:\Keil-v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil-v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include-IE:\Keil-v5\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM3-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\User\main.c)(0x6818C90B)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Hardware -I .\Library -I .\Start -I .\System -I .\User -I .\DSPlib\Include -I .\Hardware -I .\LCD -I .\HMI-I.\RTE\_Target_1-IE:\Keil-v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil-v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include-IE:\Keil-v5\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM3-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (User\main.h)(0x6814BFAB)
 I (.\Start\stm32f10x.h)(0x4D783CB4)
 I (.\DSPlib\Include\core_cm3.h)(0x672B5886)
@@ -1487,7 +1487,7 @@ I (.\Library\stm32f10x_usart.h)(0x4D783BB4)
 I (.\Library\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\Library\misc.h)(0x4D783BB4)
 F (.\User\main.h)(0x6814BFAB)()
-F (.\User\RLCtest.c)(0x681763E1)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Hardware -I .\Library -I .\Start -I .\System -I .\User -I .\DSPlib\Include -I .\Hardware -I .\LCD -I .\HMI-I.\RTE\_Target_1-IE:\Keil-v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil-v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include-IE:\Keil-v5\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM3-o .\objects\rlctest.o --omf_browse .\objects\rlctest.crf --depend .\objects\rlctest.d)
+F (.\User\RLCtest.c)(0x6818DBA1)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Hardware -I .\Library -I .\Start -I .\System -I .\User -I .\DSPlib\Include -I .\Hardware -I .\LCD -I .\HMI-I.\RTE\_Target_1-IE:\Keil-v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil-v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include-IE:\Keil-v5\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM3-o .\objects\rlctest.o --omf_browse .\objects\rlctest.crf --depend .\objects\rlctest.d)
 I (.\Start\stm32f10x.h)(0x4D783CB4)
 I (.\DSPlib\Include\core_cm3.h)(0x672B5886)
 I (E:\Keil-v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -1522,6 +1522,7 @@ I (.\Library\misc.h)(0x4D783BB4)
 I (.\System\Delay.h)(0x6803644E)
 I (.\Hardware\matrix_keypad.h)(0x68160113)
 I (.\Hardware\Timing Sampling.h)(0x68175F56)
+I (.\HMI\tjc_usart_hmi.h)(0x6818D697)
 I (User\RLCtest.h)(0x606D4F32)
 I (E:\Keil-v5\ARM\ARMCC\include\math.h)(0x60252378)
 I (E:\Keil-v5\ARM\ARMCC\include\stdio.h)(0x60252374)
@@ -1530,7 +1531,7 @@ I (.\Hardware\AD9833.h)(0x68172CA9)
 I (.\System\sys.h)(0x6814B39F)
 I (E:\Keil-v5\ARM\ARMCC\include\string.h)(0x6025237E)
 F (.\User\RLCtest.h)(0x606D4F32)()
-F (.\User\check_err.c)(0x6817607E)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Hardware -I .\Library -I .\Start -I .\System -I .\User -I .\DSPlib\Include -I .\Hardware -I .\LCD -I .\HMI-I.\RTE\_Target_1-IE:\Keil-v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil-v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include-IE:\Keil-v5\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM3-o .\objects\check_err.o --omf_browse .\objects\check_err.crf --depend .\objects\check_err.d)
+F (.\User\check_err.c)(0x6818D697)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Hardware -I .\Library -I .\Start -I .\System -I .\User -I .\DSPlib\Include -I .\Hardware -I .\LCD -I .\HMI-I.\RTE\_Target_1-IE:\Keil-v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil-v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include-IE:\Keil-v5\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM3-o .\objects\check_err.o --omf_browse .\objects\check_err.crf --depend .\objects\check_err.d)
 I (.\Start\stm32f10x.h)(0x4D783CB4)
 I (.\DSPlib\Include\core_cm3.h)(0x672B5886)
 I (E:\Keil-v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -1564,6 +1565,7 @@ I (.\Library\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\Library\misc.h)(0x4D783BB4)
 I (.\System\Delay.h)(0x6803644E)
 I (.\Hardware\Timing Sampling.h)(0x68175F56)
+I (.\HMI\tjc_usart_hmi.h)(0x6818D697)
 I (User\RLCtest.h)(0x606D4F32)
 I (User\check_err.h)(0x5F0046FA)
 I (E:\Keil-v5\ARM\ARMCC\include\stdio.h)(0x60252374)
@@ -1614,8 +1616,8 @@ I (.\System\delay.h)(0x6803644E)
 I (LCD\lcd_ex.c)(0x68036476)
 F (.\LCD\lcd.h)(0x6803634F)()
 F (.\LCD\lcdfont.h)(0x64ABAEFC)()
-F (.\HMI\tjc_usart_hmi.c)(0x68186B64)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Hardware -I .\Library -I .\Start -I .\System -I .\User -I .\DSPlib\Include -I .\Hardware -I .\LCD -I .\HMI-I.\RTE\_Target_1-IE:\Keil-v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil-v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include-IE:\Keil-v5\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM3-o .\objects\tjc_usart_hmi.o --omf_browse .\objects\tjc_usart_hmi.crf --depend .\objects\tjc_usart_hmi.d)
-I (HMI\tjc_usart_hmi.h)(0x68175F56)
+F (.\HMI\tjc_usart_hmi.c)(0x6818D697)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Hardware -I .\Library -I .\Start -I .\System -I .\User -I .\DSPlib\Include -I .\Hardware -I .\LCD -I .\HMI-I.\RTE\_Target_1-IE:\Keil-v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil-v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include-IE:\Keil-v5\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM3-o .\objects\tjc_usart_hmi.o --omf_browse .\objects\tjc_usart_hmi.crf --depend .\objects\tjc_usart_hmi.d)
+I (HMI\tjc_usart_hmi.h)(0x6818D697)
 I (.\Start\stm32f10x.h)(0x4D783CB4)
 I (.\DSPlib\Include\core_cm3.h)(0x672B5886)
 I (E:\Keil-v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -1652,5 +1654,5 @@ I (E:\Keil-v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (E:\Keil-v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
 I (E:\Keil-v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (.\Hardware\timing sampling.h)(0x68175F56)
-F (.\HMI\tjc_usart_hmi.h)(0x68175F56)()
+F (.\HMI\tjc_usart_hmi.h)(0x6818D697)()
 F (E:\Keil-v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Lib\ARM\arm_cortexM3l_math.lib)(0x5E8ED124)()

@@ -34,6 +34,7 @@
 .\objects\rlctest.o: .\System\Delay.h
 .\objects\rlctest.o: .\Hardware\matrix_keypad.h
 .\objects\rlctest.o: .\Hardware\Timing Sampling.h
+.\objects\rlctest.o: .\HMI\tjc_usart_hmi.h
 .\objects\rlctest.o: User\RLCtest.h
 .\objects\rlctest.o: E:\Keil-v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\rlctest.o: E:\Keil-v5\ARM\ARMCC\Bin\..\include\stdio.h

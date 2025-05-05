@@ -28,7 +28,8 @@ uint16_t getRingBuffLenght(void);
 uint8_t read1BFromRingBuff(uint16_t position);
 
 void TJC_PageControl(void);
-void TJCDrawPoint(void);
+void TJCDrawCurve(void);
+void TJC_ChangeTxt(uint8_t blank,uint16_t Value);
 
 #define RINGBUFF_LEN	(500)     //定义最大接收字节数 500
 

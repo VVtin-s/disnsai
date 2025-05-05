@@ -203,7 +203,7 @@ void TJCPrintf(const char *str, ...)
 
 }
 
-void TJCDrawPoint(void)
+void TJCDrawCurve(void)
 {
 	uint16_t i=0;
 	for ( i = 0; i < sample_num; i++)
@@ -428,7 +428,7 @@ void TJC_PageControl(void)
 	  }
 }
 
-void TJC_ChangeTxt(uint16_t Value)
+void TJC_ChangeTxt(uint8_t blank,uint16_t Value)
 {
-	TJCPrintf( "t3.txt=%d", Value);
+	TJCPrintf( "t%d.txt=%c%f%c", blank, 34, Value, 34);
 }

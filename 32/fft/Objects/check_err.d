@@ -33,6 +33,7 @@
 .\objects\check_err.o: .\Library\misc.h
 .\objects\check_err.o: .\System\Delay.h
 .\objects\check_err.o: .\Hardware\Timing Sampling.h
+.\objects\check_err.o: .\HMI\tjc_usart_hmi.h
 .\objects\check_err.o: User\RLCtest.h
 .\objects\check_err.o: User\check_err.h
 .\objects\check_err.o: E:\Keil-v5\ARM\ARMCC\Bin\..\include\stdio.h

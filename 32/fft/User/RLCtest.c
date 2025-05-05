@@ -30,8 +30,8 @@
 //-----------------------------------------------------------------
 uint16_t       Data_Rms[2082];					//采集点数 
 uint16_t       Data_v[500];							//采集点数 
-static u8 buf[8];
-u8 key_numb,function_set=0,flag=0,A=0;
+//static u8 buf[8];
+u8 key_numb,A=0;
 int G_db=0; 
 u16 i;
 u32 freq;
@@ -221,28 +221,21 @@ void RLC_test(void)
 {
 	u8 err;
 
-	key_numb=Keypad_Scan();																						// 获取按键状态
-	
-	// 光标移动功能
-	if(key_numb==1)																									// K1键移动光标
-	{
-	  //光标移动显示
-//		move();                                              
-	}
-	
+//	key_numb=Keypad_Scan();																						// 获取按键状态
+//	
+//	// 光标移动功能
+//	if(key_numb==1)																									// K1键移动光标
+//	{
+//	  //光标移动显示
+////		move();                                              
+//	}
+ TJC_PageControl();
 	// 测试功能
-	if(function_set!=0)																							// 只要光标移动到合适位置就不为0, 按对应按键进入相应测试功能
-	{		
-		if(key_numb==2)																								// 按下K2键确认并进入光标对应的单元
-		{
-			if(flag==0)						 													
-			{
-				//主界面显示
-//				display1();                                      
-			}
+		
+			if(CurrentPage==0);
 			
 			// 测试三极管电路的基本参数并保存一些故障检测需要用到的参数值
-			if(flag==1)																	
+			if(CurrentPage==1)																	
 			{			
 				 //获取采集电压峰峰值
 				 getcaculation();                       
@@ -271,23 +264,26 @@ void RLC_test(void)
 				test();
 				
 			  //显示测量输入电阻输出电阻等值
-//				display2();                              			
-				flag=1;
+
+				TJC_ChangeTxt( 3 ,Ri);
+				TJC_ChangeTxt( 4 ,Ro);
+				TJC_ChangeTxt( 6 ,Gain);						
+				CurrentPage=1;
 			}
 			
 			// 测试三极管放大电路的幅频特性曲线
-			if(flag==2)
+			if(CurrentPage==2)
 			{
 				Gate_Clr_A;																									// BA=10: 使用衰减倍数大的即输入小信号, 短路前端串入的电阻RS; 后端交流检测的增益为1			
 				Gate_Clr_B;
 				Delay_ms(10);
-//				Display_SweepLine();																				// 幅频特性曲线界面初始化
+				TJCDrawCurve();																				// 幅频特性曲线界面初始化
 				Sweep_out(0, 1000000);																			// 扫频: 0-1MHz, 显示幅频特性曲线和上限截止频率
-				flag=6;
+				CurrentPage=2;
 			}
 			
 			// 故障检测
-			if(flag==3)
+			if(CurrentPage==3)
 			{
 				Gate_Set_A;																									// BA=01: 使用衰减倍数大的即输入小信号, 接入前端串入的电阻RS; 后端交流检测的增益为1
 				Gate_Clr_B;
@@ -302,22 +298,22 @@ void RLC_test(void)
 				}				
 			}
 			
-		}
-	}
+		
+	
 	
 	// 如果是K4按下
-	if(key_numb==4)
-	{
-		if(flag==1|flag==2|flag==3|flag==6)
-		{
-//			Interface_Init();																							// 开机界面初始化
-			function_set=0;								
-			flag=0;																
-			Gate_Set;																											// 断开负载
-			AD9833_SetFrequency(AD9833_REG_FREQ0, AD9833_OUT_SINUS, freq_trl_word(1000), 0);	// DDS-AD9833默认输出1kHz正弦信号
-		}
-		
-	}
+//	if(key_numb==4)
+//	{
+//		if(flag==1|flag==2|flag==3|flag==6)
+//		{
+////			Interface_Init();																							// 开机界面初始化
+//			function_set=0;								
+//			flag=0;																
+//			Gate_Set;																											// 断开负载
+//			AD9833_SetFrequency(AD9833_REG_FREQ0, AD9833_OUT_SINUS, freq_trl_word(1000), 0);	// DDS-AD9833默认输出1kHz正弦信号
+//		}
+//		
+//	}
 }
 
 //-----------------------------------------------------------------
@@ -570,7 +566,7 @@ void Sweep_out (u32 fre_l, u32 fre_h)
 		ADC_Samp_Sweep();   										// 交流电压采集函数
 		Data_Rms[i]=Adc_data[1];      			// 采集到的幅值赋值给数组Data_Rms[i]，用于显示幅频曲线
 		val=(int)(1.0*(Data_Rms[i])/(12-0));	// val的值表示在液晶上打印频点的高度(强制转化成整型，为了能与整数相加减)
-	//	LCD_SetPoint(35+(int)(1.0*i/2.4),(230-val),YELLOW);	//因为左上角坐标(0,0)，画点设置从纵坐标开始  x+(int)(1.0*i)，先设定一个相应高度的点（240），然后从240处往下按采集的幅值打点
+		//LCD_SetPoint(35+(int)(1.0*i/2.4),(230-val),YELLOW);	//因为左上角坐标(0,0)，画点设置从纵坐标开始  x+(int)(1.0*i)，先设定一个相应高度的点（240），然后从240处往下按采集的幅值打点
 		if(Data_Rms[i]>Max_vpp && (Data_Rms[i]-Max_vpp)> 5)
 		{			
 			Max_vpp=Data_Rms[i];   								// 求出频带里的最大幅值
@@ -642,7 +638,7 @@ void Sweep_out (u32 fre_l, u32 fre_h)
 	else fH=1.5*fH/1000;
 	// 显示上限值
 	sprintf((char*)buf,"fH=%.1f kHz",fH);
-	//LCD_WriteString(194,40,YELLOW,BLACK,buf);	
+	TJCPrintf( "n0.val=%f", fH);
   fL=1.0*fL/1000;
 	freq_high = fH;
 	freq_low = fL;
