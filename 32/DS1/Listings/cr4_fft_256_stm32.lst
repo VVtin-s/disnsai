@@ -1092,13 +1092,13 @@ Symbol: NPT
    Definitions
       At line 46 in file System\cr4_fft_256_stm32.s
    Uses
-      At line 136 in macro ÷lOPT
+      At line 136 in macro h§jOPT
       at line 228 in file System\cr4_fft_256_stm32.s
-      At line 139 in macro ÷lOPT
+      At line 139 in macro h§jOPT
       at line 228 in file System\cr4_fft_256_stm32.s
-      At line 142 in macro ÷lOPT
+      At line 142 in macro h§jOPT
       at line 228 in file System\cr4_fft_256_stm32.s
-      At line 145 in macro ÷lOPT
+      At line 145 in macro h§jOPT
       at line 228 in file System\cr4_fft_256_stm32.s
 
 1 symbol
